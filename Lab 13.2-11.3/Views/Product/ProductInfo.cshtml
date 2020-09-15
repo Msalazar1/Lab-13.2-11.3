@@ -1,0 +1,28 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Coffee Information";
+    string price = $"{Model.Price:C}";
+}
+
+<h1>Coffee Description</h1>
+
+<br />
+<table>
+    <tr>
+        <td><b>Name</b></td>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <td><b>Category</b></td>
+        <td>@Model.Category</td>
+    </tr>
+    <tr>
+        <td><b>Description</b></td>
+        <td>@Model.Description</td>
+    </tr>
+    <tr>
+        <td><b>Price</b></td>
+        <td>@price</td>
+    </tr>
+</table>
+

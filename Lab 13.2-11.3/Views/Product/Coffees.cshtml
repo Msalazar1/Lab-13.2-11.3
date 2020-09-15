@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Coffees";
+}
+
+<h1>Click a Coffee for a description</h1>
+<br />
+<ul>
+    @foreach (string ItemName in Model)
+    {
+        <li><a href="/Products/Products?category=@ItemName">@ItemName</a></li>
+    }
+</ul>
+
